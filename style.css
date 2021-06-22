@@ -1,0 +1,131 @@
+@keyframes pisca{
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100% {opacity: 0.2;}
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.urna{
+    background-color: #ccc4b4;
+    padding: 30px;
+    display: flex;
+    
+}
+.tela {
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.teclado{
+    background-color: rgb(116, 101, 101);
+    margin-left: 30px;
+}
+.tecladoLinha{
+    display: flex;
+    justify-content: center;
+}
+.tecladoBotao{
+    width: 70px;
+    height: 40px;
+    background-color: black;
+    color: wheat;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #999;
+}
+.botaoBranco{
+    background-color: white;
+    color: black;
+}
+.botaoCorrige{
+    background-color: #f09046;
+    color: #000;
+}
+.botaoConfirma{
+    background-color: #48c079;
+    color: black;
+    width: 90px;
+    height: 50px;
+}
+.parteUm{
+    flex: 1;
+    display: flex;
+}
+.ladoUm{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.ladoDois{
+    width: 90px;
+}
+.parteDois{
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px solid black;
+    padding-left: 10px;
+}
+.parteLadoUm{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.parteLadoDois{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+.parteLadoTres{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+.numero {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+.pisca{
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.parteLadoQuatro{
+    margin-top: 15px;
+}
+.parteLadoCinco{
+    margin-top: 30px;
+}
+img {
+    width: 68px;
+    height: 100px;
+}
+.avisoGrande {
+    font-size: 30px;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+.avisoGrandeDois{
+    font-size: 80px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+}

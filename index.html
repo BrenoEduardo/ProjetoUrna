@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna eletrônica</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="urna">
+        <div class="tela">
+            <div class="parteUm">
+                <div class="ladoUm">
+                    <div class="parteLadoUm">
+                        <span> SEU VOTO PARA </span>
+                    </div>
+                    <div class="parteLadoDois">
+                        <span> PRESIDENTE </span>
+                    </div>
+                    <div class="parteLadoTres">
+                        <div class="numeroVoto">Numero:</div>
+                        <div class="numero pisca"></div>
+                        <div class="numero"></div>
+                    </div>
+                    <div class="parteLadoQuatro">
+                        <span> Presidente: Rodrigo Martins</span><br><br>
+                        <span>Vice-Presidente: Eduardo Soares</span>
+                    </div>
+                    <div class="parteLadoCinco">
+                        <span> Partido: PDU</span>
+                    </div>
+                </div>
+                <div class="ladoDois">
+                    <div class="imagemUm"><img src="Imagens/Rodrigo.jpg" alt="">Presidente
+                    </div>
+                    <div class="imagemDois"><img src="Imagens/Dudu.jpg"
+                            alt="">Vice-Presidente</div>
+                </div>
+            </div>
+            <div class="parteDois">
+                Aperte a tecla <br>
+                VERDE para CONFIRMAR <br>
+                LARANJA para CORRIGIR
+            </div>
+        </div>
+        <div class="teclado">
+            <div class="tecladoLinha">
+                <div class="tecladoBotao" onclick="clicou('1')">1</div>
+                <div class="tecladoBotao" onclick="clicou('2')">2</div>
+                <div class="tecladoBotao" onclick="clicou('3')">3</div>
+            </div>
+            <div class="tecladoLinha">
+                <div class="tecladoBotao" onclick="clicou('4')">4</div>
+                <div class="tecladoBotao" onclick="clicou('5')">5</div>
+                <div class="tecladoBotao" onclick="clicou('6')">6</div>
+            </div>
+            <div class="tecladoLinha">
+                <div class="tecladoBotao" onclick="clicou('7')">7</div>
+                <div class="tecladoBotao" onclick="clicou('8')">8</div>
+                <div class="tecladoBotao" onclick="clicou('9')">9</div>
+            </div>
+            <div class="tecladoLinha">
+                <div class="tecladoBotao" onclick="clicou('0')">0</div>
+            </div>
+            <div class="tecladoLinha">
+                <div class="tecladoBotao botaoBranco" onclick="Branco()">Branco</div>
+                <div class="tecladoBotao botaoCorrige"onclick="Corrige()">Corrige</div>
+                <div class="tecladoBotao botaoConfirma"onclick="Confirma()">Confirma</div>
+            </div>
+            <div class="tecladoConfirma">
+            </div>
+        </div>
+    </div>
+    <script src="candidatos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

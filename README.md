@@ -1,0 +1,1 @@
+Projeto de uma urna eletrônica, utilizando html, css, javascript e JSON
